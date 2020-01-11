@@ -8,6 +8,7 @@
     "gatsby-plugin-manifest": "2.2.37",
     "gatsby-plugin-offline": "3.0.31",
     "gatsby-plugin-postcss": "2.1.19",
+    "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-purgecss": "4.0.1",
     "gatsby-plugin-react-helmet": "3.1.21",
     "graphql": "14.5.8",
