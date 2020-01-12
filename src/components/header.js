@@ -34,8 +34,7 @@ function Header() {
 					Menu
 				</button>
 
-				<nav
-					className={`${isExpanded ? `flex` : `hidden`} md:flex items-center`}>
+				<nav className="hidden md:flex items-center">
 					{[
 						{
 							route: `/about`,
