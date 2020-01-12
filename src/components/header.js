@@ -2,80 +2,65 @@ import { graphql, useStaticQuery, Link } from "gatsby";
 import React, { useState } from "react";
 
 function Header() {
-  const [isExpanded, toggleExpansion] = useState(false);
-  const { site } = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
+	const [isExpanded, toggleExpansion] = useState(false);
+	const { site } = useStaticQuery(graphql`
+		query SiteTitleQuery {
+			site {
+				siteMetadata {
+					title
+				}
+			}
+		}
+	`);
 
-  return (
-    <header className="bg-teal-700">
-      <div className="flex flex-wrap items-center justify-between max-w-4xl mx-auto p-4 md:p-8">
-        <Link className="flex items-center no-underline text-white" to="/">
-          <svg
-            className="fill-current h-8 mr-2 w-8"
-            height="54"
-            viewBox="0 0 54 54"
-            width="54"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z" />
-          </svg>
-          <span className="font-bold text-xl tracking-tight">
-            {site.siteMetadata.title}
-          </span>
-        </Link>
+	return (
+		<header>
+			<div className="flex flex-wrap items-center justify-between container mx-auto px-4 sm:px-0 py-8">
+				<Link className="flex items-center no-underline text-white" to="/">
+					<span className="font-bold text-xl tracking-tight text-knight-black">
+						(Add logo here){" "}
+						<span className="hidden sm:inline">{site.siteMetadata.title}</span>
+					</span>
+				</Link>
 
-        <button
-          className="block md:hidden border border-white flex items-center px-3 py-2 rounded text-white"
-          onClick={() => toggleExpansion(!isExpanded)}
-        >
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
+				<button
+					className="flex items-center md:hidden border border-white cursor-pointer"
+					onClick={() => toggleExpansion(!isExpanded)}>
+					<div className="flex flex-col mr-2">
+						<span className="rounded-full w-6 h-1 bg-knight-black mb-1"></span>
+						<span className="rounded-full w-6 h-1 bg-knight-black mb-1"></span>
+						<span className="rounded-full w-6 h-1 bg-knight-black"></span>
+					</div>
+					Menu
+				</button>
 
-        <nav
-          className={`${
-            isExpanded ? `block` : `hidden`
-          } md:block md:flex md:items-center w-full md:w-auto`}
-        >
-          {[
-            {
-              route: `/`,
-              title: `Home`
-            },
-            {
-              route: `/about`,
-              title: `About`
-            },
-            {
-              route: `/contact`,
-              title: `Contact`
-            }
-          ].map(link => (
-            <Link
-              className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-white"
-              key={link.title}
-              to={link.route}
-            >
-              {link.title}
-            </Link>
-          ))}
-        </nav>
-      </div>
-    </header>
-  );
+				<nav
+					className={`${isExpanded ? `flex` : `hidden`} md:flex items-center`}>
+					{[
+						{
+							route: `/about`,
+							title: `About`
+						},
+						{
+							route: `/blog`,
+							title: `Blog`
+						},
+						{
+							route: `/contact`,
+							title: `Contact`
+						}
+					].map(link => (
+						<Link
+							className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-knight-black"
+							key={link.title}
+							to={link.route}>
+							{link.title}
+						</Link>
+					))}
+				</nav>
+			</div>
+		</header>
+	);
 }
 
 export default Header;
