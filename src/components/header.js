@@ -18,8 +18,7 @@ function Header() {
 			<div className="flex flex-wrap items-center justify-between container mx-auto px-4 sm:px-0 py-8">
 				<Link className="flex items-center no-underline text-white" to="/">
 					<span className="font-bold text-xl tracking-tight text-knight-black">
-						(Add logo here){" "}
-						<span className="hidden sm:inline">{site.siteMetadata.title}</span>
+						Logo
 					</span>
 				</Link>
 
