@@ -17,15 +17,5 @@ module.exports = {
 		}
 	},
 	variants: {},
-	plugins: [
-		function({ addUtilities }) {
-			const newUtilities = {
-				".transform-slide-right": {
-					transform: `translateX(100vw)`
-				}
-			};
-
-			addUtilities(newUtilities);
-		}
-	]
+	plugins: []
 };

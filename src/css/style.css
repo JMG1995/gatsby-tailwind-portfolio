@@ -49,6 +49,18 @@ h6,
 	@apply text-base;
 }
 
+.transform-slide-right {
+	transform: translateX(100vw);
+}
+
+.transform-slide {
+	transform: translateX(0vw);
+}
+
+.transition {
+	transition: all 0.3s ease;
+}
+
 @tailwind components;
 
 @tailwind utilities;
