@@ -11,7 +11,7 @@ function IndexPage() {
 				title="Home"
 			/>
 
-			<section className="px-20 w-1/2">
+			<section className="px-20 lg:w-1/2">
 				<h2>
 					Hi! My name is <span className="text-desire">Joseph.</span>
 				</h2>
