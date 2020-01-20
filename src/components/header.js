@@ -12,17 +12,25 @@ const Header = ({ open, setOpen }) => {
 					</span>
 				</Link>
 
-				<button
-					className="flex items-center md:hidden border border-white cursor-pointer z-50"
+				<span
+					className="flex items-center md:hidden cursor-pointer z-50 transition"
 					onClick={() => setOpen(!open)}
 					open={open}>
-					<div className="flex flex-col mr-2">
-						<span className="rounded-full w-6 h-1 bg-knight-black mb-1"></span>
-						<span className="rounded-full w-6 h-1 bg-knight-black mb-1"></span>
-						<span className="rounded-full w-6 h-1 bg-knight-black"></span>
+					<div className="flex flex-col">
+						<span
+							className={`${
+								open ? `bg-white` : `bg-knight-black`
+							} rounded-full w-6 h-1 mb-1`}></span>
+						<span
+							className={`${
+								open ? `bg-white` : `bg-knight-black`
+							} rounded-full w-6 h-1 mb-1`}></span>
+						<span
+							className={`${
+								open ? `bg-white` : `bg-knight-black`
+							} rounded-full w-6 h-1`}></span>
 					</div>
-					Menu
-				</button>
+				</span>
 
 				<nav className="hidden md:flex items-center">
 					{menuItems.map(link => (
