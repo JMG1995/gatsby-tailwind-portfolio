@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react';
 
 function Footer() {
 	return (
 		<footer className="text-knight-black">
 			<nav className="flex flex-col justify-center md:flex-row md:justify-between container mx-auto py-4 md:py-8 items-center text-base">
 				<small className="order-2 mt-4 md:mt-0 text-base">
-					Joseph Grant 2020 <sup>&copy;</sup>
+					{new Date().getFullYear()} <sup>&copy;</sup>
 				</small>
 				<div className="flex justify-between md:order-2">
 					<a
