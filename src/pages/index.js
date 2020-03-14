@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import selfie from '../images/profileImage.jpg';
+import code from '../images/code.svg';
 
 function IndexPage() {
 	return (
@@ -31,11 +31,7 @@ function IndexPage() {
 					</p>
 				</div>
 				<div className="w-1/2 mt-8 lg:mt-0 lg:w-1/3">
-					<img
-						alt="This is me!"
-						className="rounded-full shadow-xl"
-						src={selfie}
-					/>
+					<img alt="This is me!" src={code} />
 				</div>
 			</section>
 		</Layout>
