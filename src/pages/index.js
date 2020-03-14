@@ -1,7 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import selfie from '../images/profileImage.jpg';
 
 function IndexPage() {
 	return (
@@ -11,22 +12,31 @@ function IndexPage() {
 				title="Home"
 			/>
 
-			<section className="px-20 lg:w-1/2">
-				<h2>
-					Hi! My name is <span className="text-desire">Joseph.</span>
-				</h2>
-				<p className="mb-3">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et
-					sodales velit, at dignissim tortor. Donec consequat et augue
-					vestibulum scelerisque. Donec consectetur orci venenatis nisl
-					lobortis, sit amet laoreet lacus eleifend.
-				</p>
-				<p>
-					Interdum et malesuada fames ac ante ipsum primis in faucibus. In at
-					est sagittis, feugiat nisl vel, eleifend nibh. Etiam vehicula urna vel
-					justo scelerisque aliquet. Nulla tristique tellus vel convallis
-					luctus. Mauris nec ultrices ex. Nunc maximus gravida luctus.
-				</p>
+			<section className="px-20 flex flex-col lg:flex-row items-center justify-between">
+				<div className="lg:w-1/2">
+					<h2>
+						Hi! My name is <span className="text-desire">Joseph.</span>
+					</h2>
+					<p className="mb-3">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et
+						sodales velit, at dignissim tortor. Donec consequat et augue
+						vestibulum scelerisque. Donec consectetur orci venenatis nisl
+						lobortis, sit amet laoreet lacus eleifend.
+					</p>
+					<p>
+						Interdum et malesuada fames ac ante ipsum primis in faucibus. In at
+						est sagittis, feugiat nisl vel, eleifend nibh. Etiam vehicula urna
+						vel justo scelerisque aliquet. Nulla tristique tellus vel convallis
+						luctus. Mauris nec ultrices ex. Nunc maximus gravida luctus.
+					</p>
+				</div>
+				<div className="w-1/2 mt-8 lg:mt-0 lg:w-1/3">
+					<img
+						alt="This is me!"
+						className="rounded-full shadow-xl"
+						src={selfie}
+					/>
+				</div>
 			</section>
 		</Layout>
 	);

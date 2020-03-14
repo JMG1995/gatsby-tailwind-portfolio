@@ -1,4 +1,8 @@
+/* purgecss start ignore */
 @tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+
 /* Custom base styles */
 body {
 	@apply font-body;
@@ -60,7 +64,5 @@ h6,
 .transition {
 	transition: all 0.3s ease;
 }
-
-@tailwind components;
 
 @tailwind utilities;

@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import React from "react";
-import menuItems from "./menu-items";
+import { Link } from 'gatsby';
+import React from 'react';
+import menuItems from './menu-items';
 
 const MobileMenu = ({ open }) => {
 	return (

@@ -1,6 +1,6 @@
-import { Link } from "gatsby";
-import React from "react";
-import menuItems from "./menu-items";
+import { Link } from 'gatsby';
+import React from 'react';
+import menuItems from './menu-items';
 
 const Header = ({ open, setOpen }) => {
 	return (
@@ -8,7 +8,7 @@ const Header = ({ open, setOpen }) => {
 			<div className="flex flex-wrap items-center justify-between container mx-auto px-4 sm:px-0 py-8">
 				<Link className="flex items-center no-underline text-white" to="/">
 					<span className="font-bold text-xl tracking-tight text-knight-black">
-						Logo
+						Joseph Grant
 					</span>
 				</Link>
 
