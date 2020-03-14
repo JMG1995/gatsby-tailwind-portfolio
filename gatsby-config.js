@@ -19,16 +19,14 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-postcss`,
-		// {
-		// 	resolve: `gatsby-plugin-postcss`,
-		// 	options: {
-		// 		postCssPlugins: [
-		// 			require(`tailwindcss`)(`./tailwind.config.js`),
-		// 			require(`autoprefixer`),
-		// 			require(`cssnano`),
-		// 		],
-		// 	},
-		// },
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `blog`,
+				path: `${__dirname}/src/blog`,
+			},
+		},
+		`gatsby-transformer-remark`,
 		{
 			resolve: `gatsby-plugin-purgecss`,
 			options: {
