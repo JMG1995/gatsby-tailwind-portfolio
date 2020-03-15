@@ -19,6 +19,8 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-postcss`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
 		{
 			resolve: `gatsby-source-filesystem`,
 			options: {
@@ -26,7 +28,12 @@ module.exports = {
 				path: `${__dirname}/src/blog`,
 			},
 		},
-		`gatsby-transformer-remark`,
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				excerpt_separator: `<!-- end -->`,
+			},
+		},
 		{
 			resolve: `gatsby-plugin-purgecss`,
 			options: {

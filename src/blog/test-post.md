@@ -2,7 +2,12 @@
 path: '/blog/this-is-the-slug'
 date: '2019-05-04'
 title: 'This is the title'
-author: 'Joseph Grant'
+categories: ['Category', 'Category#2']
+featuredImage: '../images/blog-image.jpg'
 ---
 
-Has anyone heard about GatsbyJS yet?
+This is the excerpt
+
+<!-- endexcerpt -->
+
+<p>Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?</p>

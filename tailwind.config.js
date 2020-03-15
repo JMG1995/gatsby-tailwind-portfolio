@@ -5,17 +5,19 @@ module.exports = {
 		colors: {
 			desire: `#E63946`, // Red
 			honeydew: `#F1FAEE`, // Off-White
-			"light-blue": `#A8DADC`, // Light Blue
-			"queen-blue": `#457B9D`, // Dark Blue
-			"space-cadet": `#1D3557`, // Darker Blue
-			"knight-black": `#161616`, // Almost Black
-			white: `#FFFFFF` // Pure White
+			'light-blue': `#A8DADC`, // Light Blue
+			'queen-blue': `#457B9D`, // Dark Blue
+			'space-cadet': `#1D3557`, // Darker Blue
+			'knight-black': `#161616`, // Almost Black
+			white: `#FFFFFF`, // Pure White
 		},
 		fontFamily: {
 			heading: [`Rubik`],
-			body: [`Karla`]
-		}
+			body: [`Karla`],
+		},
 	},
-	variants: {},
-	plugins: []
+	variants: {
+		textColor: [`responsive`, `hover`, `group-hover`],
+	},
+	plugins: [],
 };
