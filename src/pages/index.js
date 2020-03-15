@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import Post from '../components/post';
+import Blog from '../components/blog';
 import Button from '../components/button';
 import code from '../images/code.svg';
 
@@ -12,9 +12,9 @@ const IndexPage = ({
 		allMarkdownRemark: { edges },
 	},
 }) => {
-	const Posts = edges
+	const Blogs = edges
 		// .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-		.map(edge => <Post key={edge.node.id} post={edge.node} />);
+		.map(edge => <Blog blog={edge.node} key={edge.node.id} />);
 	return (
 		<Layout>
 			<SEO
@@ -48,7 +48,7 @@ const IndexPage = ({
 				</section>
 				<section className="mt-32 mb-24">
 					<h2 className="mb-8">Blog</h2>
-					<div className="-mx-4 flex flex-wrap">{Posts}</div>
+					<div className="-mx-4 flex flex-wrap">{Blogs}</div>
 					<Button text="Load More" />
 				</section>
 			</div>

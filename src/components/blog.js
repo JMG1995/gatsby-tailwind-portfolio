@@ -2,15 +2,15 @@ import React from 'react';
 import featuredImage from '../images/blog-image.jpg';
 import { Link } from 'gatsby';
 
-const Post = ({ post }) => {
+const Blog = ({ blog }) => {
 	const {
 		excerpt,
 		frontmatter: { title, date, categories },
-	} = post;
+	} = blog;
 
 	return (
 		<div className="md:w-1/2 lg:w-1/3 mb-12 px-4 group transform-scale-up transition-quick">
-			<Link to={post.frontmatter.path}>
+			<Link to={blog.frontmatter.path}>
 				<img
 					alt="this the alt"
 					className="rounded-t-lg object-cover"
@@ -31,4 +31,4 @@ const Post = ({ post }) => {
 	);
 };
 
-export default Post;
+export default Blog;
