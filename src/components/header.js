@@ -35,7 +35,7 @@ const Header = ({ open, setOpen }) => {
 				<nav className="hidden md:flex items-center">
 					{menuItems.map(link => (
 						<Link
-							className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-knight-black"
+							className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-knight-black hover:text-desire transition"
 							key={link.title}
 							to={link.route}>
 							{link.title}

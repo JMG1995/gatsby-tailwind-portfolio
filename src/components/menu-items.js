@@ -1,16 +1,16 @@
 const menuItems = [
 	{
-		route: `/about`,
-		title: `About`
+		route: `/projects`,
+		title: `Projects`,
 	},
 	{
 		route: `/blog`,
-		title: `Blog`
+		title: `Blog`,
 	},
 	{
 		route: `/contact`,
-		title: `Contact`
-	}
+		title: `Contact`,
+	},
 ];
 
 export default menuItems;
