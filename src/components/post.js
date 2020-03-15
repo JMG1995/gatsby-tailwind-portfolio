@@ -24,7 +24,7 @@ const Post = ({ post }) => {
 					))}
 					<h5 className="group-hover:text-desire transition-quick">{title}</h5>
 					<span className="opacity-75 text-sm">{date}</span>
-					<p className="my-4">{excerpt}</p>
+					<p className="my-2">{excerpt}</p>
 				</div>
 			</Link>
 		</div>
