@@ -9,7 +9,7 @@ const Post = ({ post }) => {
 	} = post;
 
 	return (
-		<div className="w-1/3 mx-4 group rounded-lg shadow-md transform-scale-up transition-quick">
+		<div className="md:w-1/2 lg:w-1/3 mx-4 group rounded-lg shadow-md transform-scale-up transition-quick">
 			<Link to={post.frontmatter.path}>
 				<img
 					alt="this the alt"

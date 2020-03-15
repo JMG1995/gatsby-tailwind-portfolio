@@ -21,7 +21,7 @@ const IndexPage = ({
 				title="Home"
 			/>
 
-			<div className="px-20">
+			<div className="px-8 md:px-16 lg:px-20">
 				<section className="mb-24 flex flex-col lg:flex-row items-center justify-between">
 					<div className="lg:w-1/2">
 						<h2>
