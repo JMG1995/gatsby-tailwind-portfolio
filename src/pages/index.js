@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Blog from '../components/blog';
@@ -14,6 +14,7 @@ const IndexPage = ({
 	const Blogs = edges
 		// .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
 		.map(edge => <Blog blog={edge.node} key={edge.node.id} />);
+
 	return (
 		<Layout>
 			<SEO
@@ -28,28 +29,33 @@ const IndexPage = ({
 							Hi! My name is <span className="text-desire">Joseph.</span>
 						</h2>
 						<p className="mb-3">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et
-							sodales velit, at dignissim tortor. Donec consequat et augue
-							vestibulum scelerisque. Donec consectetur orci venenatis nisl
-							lobortis, sit amet laoreet lacus eleifend.
+							I'm a self-taught Frontend Web Developer based in Perth,
+							Australia. <br />I enjoy building clean, fast and responsive
+							websites using modern tech stacks.
 						</p>
 						<p>
-							Interdum et malesuada fames ac ante ipsum primis in faucibus. In
-							at est sagittis, feugiat nisl vel, eleifend nibh. Etiam vehicula
-							urna vel justo scelerisque aliquet. Nulla tristique tellus vel
-							convallis luctus. Mauris nec ultrices ex. Nunc maximus gravida
-							luctus.
+							If you're interested in working together, make sure to{' '}
+							<Link className="text-desire hover:underline" to="/projects">
+								check out my work
+							</Link>{' '}
+							or{' '}
+							<Link className="text-desire hover:underline" to="/contact">
+								drop me a line.
+							</Link>
 						</p>
 					</div>
 					<div className="w-1/2 mt-8 lg:mt-0 lg:w-1/3">
 						<img alt="This is me!" src={code} />
 					</div>
 				</section>
-				<section className="mt-32 mb-24">
-					<h2 className="mb-8">Blog</h2>
-					<div className="-mx-4 flex flex-wrap">{Blogs}</div>
-					{Blogs.length >= 2 ?? <Button text="Load More" />}
-				</section>
+
+				{Blogs.length > 0 ? (
+					<section className="mt-32 mb-24">
+						<h2 className="mb-8">Blog</h2>
+						<div className="-mx-4 flex flex-wrap">{Blogs}</div>
+						{Blogs.length >= 2 ?? <Button text="Load More" />}
+					</section>
+				) : null}
 			</div>
 		</Layout>
 	);
