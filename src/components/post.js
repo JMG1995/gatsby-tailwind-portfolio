@@ -9,14 +9,14 @@ const Post = ({ post }) => {
 	} = post;
 
 	return (
-		<div className="md:w-1/2 lg:w-1/3 mx-4 group rounded-lg shadow-md transform-scale-up transition-quick">
+		<div className="md:w-1/2 lg:w-1/3 px-4 group transform-scale-up transition-quick">
 			<Link to={post.frontmatter.path}>
 				<img
 					alt="this the alt"
 					className="rounded-t-lg object-cover"
 					src={featuredImage}
 				/>
-				<div className="px-4 pb-4">
+				<div className="px-4 pb-4 rounded-lg shadow-md">
 					{categories.map(category => (
 						<span className="rounded-full text-sm bg-space-cadet px-3 text-honeydew my-3 inline-block mr-2">
 							{category}
