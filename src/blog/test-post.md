@@ -6,9 +6,10 @@ categories: ['Category', 'Category#2']
 featuredImage: './blog-image.jpg'
 ---
 
-<p class="excerpt">This is the excerpt</p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis gravida quam. Aliquam ut magna eu lacus fermentum mattis et sed nibh. Duis justo odio, feugiat eget dignissim eget, tempus vel risus. Phasellus vel tellus eu lacus finibus volutpat. Cras a risus nec erat ultricies vulputate in sit amet nunc. Praesent massa justo, auctor ac tincidunt eu, vestibulum in erat.
 
 <!-- endexcerpt -->
 
-<p>Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?rd about GatsbyJS yet?Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?rd about GatsbyJS yet?Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?</p>
-<p>Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?Has anyone heard about GatsbyJS yet?</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis gravida quam. Aliquam ut magna eu lacus fermentum mattis et sed nibh. Duis justo odio, feugiat eget dignissim eget, tempus vel risus. Phasellus vel tellus eu lacus finibus volutpat. Cras a risus nec erat ultricies vulputate in sit amet nunc. Praesent massa justo, auctor ac tincidunt eu, vestibulum in erat. </p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mollis gravida quam. Aliquam ut magna eu lacus fermentum mattis et sed nibh. Duis justo odio, feugiat eget dignissim eget, tempus vel risus. Phasellus vel tellus eu lacus finibus volutpat. Cras a risus nec erat ultricies vulputate in sit amet nunc. Praesent massa justo, auctor ac tincidunt eu, vestibulum in erat. </p>
