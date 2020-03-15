@@ -19,16 +19,28 @@ module.exports = {
 			},
 		},
 		`gatsby-plugin-postcss`,
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
 		// {
-		// 	resolve: `gatsby-plugin-postcss`,
+		// 	resolve: `gatsby-source-filesystem`,
 		// 	options: {
-		// 		postCssPlugins: [
-		// 			require(`tailwindcss`)(`./tailwind.config.js`),
-		// 			require(`autoprefixer`),
-		// 			require(`cssnano`),
-		// 		],
+		// 		name: `images`,
+		// 		path: `${__dirname}/src/images`,
 		// 	},
 		// },
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `blog`,
+				path: `${__dirname}/src/blog`,
+			},
+		},
+		{
+			resolve: `gatsby-transformer-remark`,
+			options: {
+				excerpt_separator: `<!-- end -->`,
+			},
+		},
 		{
 			resolve: `gatsby-plugin-purgecss`,
 			options: {
