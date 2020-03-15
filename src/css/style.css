@@ -77,4 +77,14 @@ h6,
 	}
 }
 
+.blog-post-content {
+	.excerpt {
+		@apply hidden;
+	}
+
+	p {
+		@apply mb-6;
+	}
+}
+
 @tailwind utilities;
