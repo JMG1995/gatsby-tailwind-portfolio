@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Post from '../components/post';
+import Button from '../components/button';
 import code from '../images/code.svg';
 
 const IndexPage = ({
@@ -48,6 +49,7 @@ const IndexPage = ({
 				<section className="mt-32 mb-24">
 					<h2 className="mb-8">Blog</h2>
 					<div className="-mx-4 flex flex-wrap">{Posts}</div>
+					<Button text="Load More" />
 				</section>
 			</div>
 		</Layout>
