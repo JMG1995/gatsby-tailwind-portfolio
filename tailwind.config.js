@@ -10,6 +10,7 @@ module.exports = {
 			'space-cadet': `#1D3557`, // Darker Blue
 			'knight-black': `#161616`, // Almost Black
 			white: `#FFFFFF`, // Pure White
+			'light-grey': `#F6F6F6`, // Light Grey
 		},
 		fontFamily: {
 			heading: [`Rubik`],

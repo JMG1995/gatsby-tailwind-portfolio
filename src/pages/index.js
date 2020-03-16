@@ -50,7 +50,7 @@ const IndexPage = ({
 				</section>
 
 				{Blogs.length > 0 ? (
-					<section className="mt-32 mb-24">
+					<section className="my-24">
 						<h2 className="mb-8">Blog</h2>
 						<div className="-mx-4 flex flex-wrap">{Blogs}</div>
 						{Blogs.length >= 2 ?? <Button text="Load More" />}
