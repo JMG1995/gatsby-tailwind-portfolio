@@ -10,11 +10,11 @@ function ContactPage() {
 				keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
 				title="Contact"
 			/>
-			<section>
-				<h2 className="w-1/2 text-center mx-auto">
+			<section className="px-4 md:px-0">
+				<h2 className="md:w-1/2 text-center mx-auto">
 					I want to hear from <em>you</em>.
 				</h2>
-				<p className="w-1/3 text-center mx-auto mb-4">
+				<p className="md:w-1/3 text-center mx-auto mb-4">
 					Don't hesitate to drop me a line if you have any questions, would like
 					to work together or even just have a chat.
 				</p>
