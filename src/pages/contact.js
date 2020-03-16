@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Button from '../components/button';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
@@ -58,9 +59,10 @@ function ContactPage() {
 						rows="8"
 					/>
 
-					<button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white">
+					{/* <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white bg-space-cadet">
 						Submit
-					</button>
+					</button> */}
+					<Button text="Send me a message" />
 				</form>
 			</section>
 		</Layout>
