@@ -13,7 +13,7 @@ const Header = ({ open, setOpen }) => {
 				</Link>
 
 				<span
-					className="flex items-center md:hidden cursor-pointer z-50 transition"
+					className="flex items-center font-semibold md:hidden cursor-pointer z-50 transition"
 					onClick={() => setOpen(!open)}
 					open={open}>
 					<div className="flex flex-col">
