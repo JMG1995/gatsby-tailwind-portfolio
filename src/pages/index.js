@@ -44,7 +44,10 @@ const IndexPage = ({
 							</Link>
 						</p>
 					</div>
-					<div className="w-1/2 mt-8 lg:mt-0 lg:w-1/3">
+					<div className="relative w-1/2 mt-8 lg:mt-0 lg:w-1/3 group">
+						<span className="tooltip opacity-0 group-hover:opacity-100">
+							Hard at work!
+						</span>
 						<img alt="This is me!" src={code} />
 					</div>
 				</section>
@@ -69,7 +72,7 @@ export const pageQuery = graphql`
 			edges {
 				node {
 					id
-					excerpt(pruneLength: 250)
+					excerpt
 					frontmatter {
 						date(formatString: "MMMM DD, YYYY")
 						path

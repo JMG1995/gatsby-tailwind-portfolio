@@ -13,7 +13,7 @@ function ContactPage() {
 			/>
 			<section className="px-4 md:px-0">
 				<h2 className="md:w-1/2 text-center mx-auto">
-					I want to hear from <em>you</em>.
+					I want to hear from <em className="text-desire">you</em>.
 				</h2>
 				<p className="md:w-1/3 text-center mx-auto mb-4">
 					Don't hesitate to drop me a line if you have any questions, would like
@@ -59,9 +59,6 @@ function ContactPage() {
 						rows="8"
 					/>
 
-					{/* <button className="border-b-4 border-gray-800 hover:border-gray-700 bg-gray-700 hover:bg-gray-600 font-bold px-4 py-2 rounded text-sm text-white bg-space-cadet">
-						Submit
-					</button> */}
 					<Button text="Send me a message" />
 				</form>
 			</section>

@@ -19,6 +19,7 @@ module.exports = {
 	},
 	variants: {
 		textColor: [`responsive`, `hover`, `group-hover`],
+		opacity: [`hover`, `group-hover`],
 	},
 	plugins: [],
 };
