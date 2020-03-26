@@ -25,6 +25,7 @@ function ContactPage() {
 					data-netlify="true"
 					method="POST"
 					name="contact">
+					<input name="form-name" type="hidden" value="contact" />
 					<label
 						className="block font-bold mb-2 text-xs uppercase"
 						htmlFor="name">
