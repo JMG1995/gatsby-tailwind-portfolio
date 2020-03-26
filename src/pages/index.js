@@ -35,10 +35,10 @@ const IndexPage = ({
 						</p>
 						<p>
 							If you're interested in working together, make sure to{' '}
-							<Link className="text-desire hover:underline" to="/projects">
+							{/* <Link className="text-desire hover:underline" to="/projects">
 								check out my work
 							</Link>{' '}
-							or{' '}
+							or{' '} */}
 							<Link className="text-desire hover:underline" to="/contact">
 								drop me a line.
 							</Link>

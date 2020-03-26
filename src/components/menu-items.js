@@ -1,11 +1,15 @@
 const menuItems = [
+	// {
+	// 	route: `/projects`,
+	// 	title: `Projects`,
+	// },
+	// {
+	// 	route: `/blog`,
+	// 	title: `Blog`,
+	// },
 	{
-		route: `/projects`,
-		title: `Projects`,
-	},
-	{
-		route: `/blog`,
-		title: `Blog`,
+		route: `/`,
+		title: `Home`,
 	},
 	{
 		route: `/contact`,
