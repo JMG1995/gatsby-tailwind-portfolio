@@ -13,7 +13,7 @@ function NotFoundPage() {
 				<p className="text-center">(This page doesn't exist)</p>
 				<img
 					alt="Ghost getting abducted by aliens"
-					className="block mx-auto w-1/2 my-16"
+					className="block mx-auto w-3/4 md:w-1/2 my-16"
 					src={goneFishin}
 				/>
 			</div>
