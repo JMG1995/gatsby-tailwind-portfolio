@@ -9,14 +9,14 @@ function Footer() {
 				</small>
 				<div className="flex justify-between md:order-2">
 					<a
-						className="mr-6 hover:underline"
+						className="mr-6 hover:text-desire"
 						href="https://twitter.com/itsmejgrant"
 						rel="noopener noreferrer"
 						target="_blank">
 						Twitter
 					</a>
 					<a
-						className="hover:underline"
+						className="hover:text-desire"
 						href="https://github.com/JMG1995/"
 						rel="noopener noreferrer"
 						target="_blank">
