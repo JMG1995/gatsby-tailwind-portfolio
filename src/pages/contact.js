@@ -33,7 +33,9 @@ function ContactPage() {
 					<input
 						className="appearance-none block mb-6 px-3 py-2 rounded-md text-gray-700 w-full rounded-lg bg-light-grey"
 						id="name"
+						name="name"
 						placeholder="Eg. John Doe"
+						required
 						type="text"
 					/>
 
@@ -46,7 +48,9 @@ function ContactPage() {
 					<input
 						className="appearance-none block mb-6 px-3 py-2 rounded-md text-gray-700 w-full rounded-lg bg-light-grey"
 						id="email"
+						name="email"
 						placeholder="Eg. johndoe@example.com.au"
+						required
 						type="email"
 					/>
 
@@ -59,7 +63,9 @@ function ContactPage() {
 					<textarea
 						className="appearance-none mb-6 px-3 py-2 rounded-md text-gray-700 w-full rounded-lg bg-light-grey"
 						id="message"
+						name="message"
 						placeholder="What's on your mind?"
+						required
 						rows="8"
 					/>
 
