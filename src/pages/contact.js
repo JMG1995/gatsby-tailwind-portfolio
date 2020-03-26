@@ -19,7 +19,7 @@ function ContactPage() {
 					Don't hesitate to drop me a line if you have any questions, would like
 					to work together or even just have a chat.
 				</p>
-				<form className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg">
+				<form className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg" netlify>
 					<label
 						className="block font-bold mb-2 text-xs uppercase"
 						htmlFor="name">
@@ -59,7 +59,7 @@ function ContactPage() {
 						rows="8"
 					/>
 
-					<Button text="Send me a message" />
+					<Button text="Send me a message" type="submit" />
 				</form>
 			</section>
 		</Layout>
