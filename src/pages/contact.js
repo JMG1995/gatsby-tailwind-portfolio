@@ -20,6 +20,7 @@ function ContactPage() {
 					to work together or even just have a chat.
 				</p>
 				<form
+					action="/contact"
 					className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg"
 					data-netlify="true"
 					method="POST"
