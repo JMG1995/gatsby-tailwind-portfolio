@@ -45,7 +45,7 @@ const IndexPage = ({
 						</p>
 					</div>
 					<div className="relative w-1/2 mt-8 lg:mt-0 lg:w-1/3 group">
-						<span className="tooltip opacity-0 group-hover:opacity-100">
+						<span className="tooltip transition opacity-0 group-hover:opacity-100">
 							Hard at work!
 						</span>
 						<img alt="This is me!" src={code} />

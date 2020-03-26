@@ -84,7 +84,7 @@ h6,
 }
 
 .tooltip {
-	@apply bg-knight-black text-white text-center py-1 px-3 -mt-12 rounded-lg absolute z-10 transition;
+	@apply bg-knight-black text-white text-center py-1 px-3 -mt-12 rounded-lg absolute z-10;
 	width: 130px;
 
 	&::after {
