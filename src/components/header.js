@@ -1,6 +1,7 @@
 import { Link } from 'gatsby';
 import React from 'react';
 import menuItems from './menu-items';
+import Hamburger from '../components/hamburger';
 
 const Header = ({ open, setOpen }) => {
 	return (
@@ -16,7 +17,8 @@ const Header = ({ open, setOpen }) => {
 					className="flex items-center md:hidden cursor-pointer z-50 transition"
 					onClick={() => setOpen(!open)}
 					open={open}>
-					<div className="flex flex-col">
+					<Hamburger />
+					{/* <div className="flex flex-col">
 						<span
 							className={`${
 								open ? `bg-white` : `bg-knight-black`
@@ -29,7 +31,7 @@ const Header = ({ open, setOpen }) => {
 							className={`${
 								open ? `bg-white` : `bg-knight-black`
 							} rounded-full w-6 h-1`}></span>
-					</div>
+					</div> */}
 				</span>
 
 				<nav className="hidden md:flex items-center">
