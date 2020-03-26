@@ -4,13 +4,15 @@
 	"description": "[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors)",
 	"main": ".eslintrc.js",
 	"dependencies": {
+		"gatsby": "^2.17.16",
 		"gatsby-image": "^2.2.43",
+		"gatsby-plugin-react-helmet": "^3.2.1",
 		"gatsby-plugin-sharp": "^2.4.12",
 		"gatsby-source-filesystem": "^2.1.55",
 		"gatsby-transformer-remark": "^2.6.58",
 		"gatsby-transformer-sharp": "^2.3.18",
 		"postcss-nested": "^4.2.1",
-		"gatsby": "^2.17.16"
+		"react-helmet": "^5.2.1"
 	},
 	"devDependencies": {},
 	"scripts": {
