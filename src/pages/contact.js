@@ -19,7 +19,11 @@ function ContactPage() {
 					Don't hesitate to drop me a line if you have any questions, would like
 					to work together or even just have a chat.
 				</p>
-				<form className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg" netlify>
+				<form
+					className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg"
+					data-netlify="true"
+					method="POST"
+					name="contact">
 					<label
 						className="block font-bold mb-2 text-xs uppercase"
 						htmlFor="name">
