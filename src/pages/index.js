@@ -18,7 +18,7 @@ const IndexPage = ({
 	return (
 		<Layout>
 			<SEO
-				keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+				keywords={[`freelance`, `perth`, `web developer`, `gatsby`]}
 				title="Home"
 			/>
 

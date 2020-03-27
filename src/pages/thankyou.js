@@ -7,10 +7,7 @@ import mailImage from '../images/mail.svg';
 const ThankYouPage = () => {
 	return (
 		<Layout>
-			<SEO
-				keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
-				title="Contact"
-			/>
+			<SEO title="Thankyou for your submission" />
 			<section className="px-4 md:px-0">
 				<h2 className="md:w-1/2 text-center mx-auto">
 					Thankyou for reaching out.

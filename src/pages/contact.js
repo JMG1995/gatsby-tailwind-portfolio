@@ -8,7 +8,14 @@ const ContactPage = () => {
 	return (
 		<Layout>
 			<SEO
-				keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+				keywords={[
+					`contact`,
+					`web dev`,
+					`perth`,
+					`tailwind`,
+					`freelance`,
+					`portfolio`,
+				]}
 				title="Contact"
 			/>
 			<section className="px-4 md:px-0">
