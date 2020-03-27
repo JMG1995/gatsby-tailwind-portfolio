@@ -7,7 +7,7 @@ const handleClick = e => {
 const Hamburger = () => {
 	return (
 		<svg
-			className="ham ham6"
+			className="ham ham6 fixed right-0"
 			onClick={handleClick}
 			viewBox="0 0 100 100"
 			width="80">

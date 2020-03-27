@@ -9,7 +9,8 @@ function Layout({ children }) {
 	const [open, setOpen] = useState(false);
 
 	return (
-		<div className="flex flex-col min-h-screen text-knight-black">
+		<div className="flex flex-col min-h-screen text-knight-black px-4 \">
+			<div className="overlay bg-knight-black fixed inset-0 z-20 opacity-0 transition pointer-events-none"></div>
 			<Header open={open} setOpen={setOpen} />
 			<MobileMenu open={open} />
 

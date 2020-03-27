@@ -6,6 +6,7 @@ import Hamburger from '../components/hamburger';
 const Header = ({ open, setOpen }) => {
 	const escFunction = useCallback(event => {
 		const hamburger = document.querySelector(`.ham`);
+
 		if (event.keyCode === 27) {
 			setOpen(false);
 			if (hamburger.classList.contains(`active`)) {
@@ -22,9 +23,33 @@ const Header = ({ open, setOpen }) => {
 		};
 	}, [escFunction]);
 
+	const handleOverlay = useCallback(() => {
+		const hamburger = document.querySelector(`.ham`);
+		const body = document.querySelector(`body`);
+		const overlay = document.querySelector(`.overlay`);
+
+		if (hamburger.classList.contains(`active`)) {
+			body.classList.add(`overflow-hidden`);
+			overlay.classList.add(`opacity-50`);
+		} else {
+			body.classList.remove(`overflow-hidden`);
+			overlay.classList.remove(`opacity-50`);
+		}
+	}, []);
+
+	useEffect(() => {
+		document.addEventListener(`click`, handleOverlay, false);
+		document.addEventListener(`keydown`, handleOverlay, false);
+
+		return () => {
+			document.removeEventListener(`click`, handleOverlay, false);
+			document.removeEventListener(`keydown`, handleOverlay, false);
+		};
+	}, [handleOverlay]);
+
 	return (
 		<header>
-			<div className="flex flex-wrap items-center justify-between container mx-auto px-4 sm:px-0 py-8">
+			<div className="flex flex-wrap items-center justify-between container mx-auto py-8">
 				<Link className="flex items-center no-underline text-white" to="/">
 					<span className="font-bold text-xl tracking-tight text-knight-black">
 						Joseph Grant
