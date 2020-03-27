@@ -1,9 +1,27 @@
 import { Link } from 'gatsby';
-import React from 'react';
+import React, { useCallback, useEffect } from 'react';
 import menuItems from './menu-items';
 import Hamburger from '../components/hamburger';
 
 const Header = ({ open, setOpen }) => {
+	const escFunction = useCallback(event => {
+		const hamburger = document.querySelector(`.ham`);
+		if (event.keyCode === 27) {
+			setOpen(false);
+			if (hamburger.classList.contains(`active`)) {
+				hamburger.classList.remove(`active`);
+			}
+		}
+	}, []);
+
+	useEffect(() => {
+		document.addEventListener(`keydown`, escFunction, false);
+
+		return () => {
+			document.removeEventListener(`keydown`, escFunction, false);
+		};
+	}, [escFunction]);
+
 	return (
 		<header>
 			<div className="flex flex-wrap items-center justify-between container mx-auto px-4 sm:px-0 py-8">

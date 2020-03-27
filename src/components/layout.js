@@ -1,12 +1,13 @@
-import PropTypes from "prop-types";
-import React, { useState } from "react";
+import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
-import Footer from "./footer";
-import Header from "./header";
-import MobileMenu from "./mobile-menu";
+import Footer from './footer';
+import Header from './header';
+import MobileMenu from './mobile-menu';
 
 function Layout({ children }) {
 	const [open, setOpen] = useState(false);
+
 	return (
 		<div className="flex flex-col min-h-screen text-knight-black">
 			<Header open={open} setOpen={setOpen} />
@@ -22,7 +23,7 @@ function Layout({ children }) {
 }
 
 Layout.propTypes = {
-	children: PropTypes.node.isRequired
+	children: PropTypes.node.isRequired,
 };
 
 export default Layout;
