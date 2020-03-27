@@ -4,7 +4,7 @@ import Button from '../components/button';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 
-function ContactPage() {
+const ContactPage = () => {
 	return (
 		<Layout>
 			<SEO
@@ -20,7 +20,7 @@ function ContactPage() {
 					to work together or even just have a chat.
 				</p>
 				<form
-					action="/contact"
+					action="/thankyou"
 					className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg"
 					data-netlify="true"
 					method="POST"
@@ -76,6 +76,6 @@ function ContactPage() {
 			</section>
 		</Layout>
 	);
-}
+};
 
 export default ContactPage;
