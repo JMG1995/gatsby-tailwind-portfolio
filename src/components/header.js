@@ -18,20 +18,6 @@ const Header = ({ open, setOpen }) => {
 					onClick={() => setOpen(!open)}
 					open={open}>
 					<Hamburger />
-					{/* <div className="flex flex-col">
-						<span
-							className={`${
-								open ? `bg-white` : `bg-knight-black`
-							} rounded-full w-6 h-1 mb-1`}></span>
-						<span
-							className={`${
-								open ? `bg-white` : `bg-knight-black`
-							} rounded-full w-6 h-1 mb-1`}></span>
-						<span
-							className={`${
-								open ? `bg-white` : `bg-knight-black`
-							} rounded-full w-6 h-1`}></span>
-					</div> */}
 				</span>
 
 				<nav className="hidden md:flex items-center">
