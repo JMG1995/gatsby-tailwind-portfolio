@@ -1,6 +1,6 @@
 module.exports = {
 	siteMetadata: {
-		title: `Joseph Grant Portfolio`,
+		title: `Joseph Grant - Developer`,
 		description: `Simple portfolio built with Gatsby and Tailwind`,
 		author: `@josephgrant`,
 	},

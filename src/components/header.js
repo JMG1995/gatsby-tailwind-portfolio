@@ -23,29 +23,31 @@ const Header = ({ open, setOpen }) => {
 		};
 	}, [escFunction]);
 
-	const handleOverlay = useCallback(() => {
-		const hamburger = document.querySelector(`.ham`);
-		const body = document.querySelector(`body`);
-		const overlay = document.querySelector(`.overlay`);
-
-		if (hamburger.classList.contains(`active`)) {
-			body.classList.add(`overflow-hidden`);
-			overlay.classList.add(`opacity-50`);
-		} else {
-			body.classList.remove(`overflow-hidden`);
-			overlay.classList.remove(`opacity-50`);
-		}
-	}, []);
-
 	useEffect(() => {
+		const handleOverlay = () => {
+			const hamburger = document.querySelector(`.ham`);
+			const body = document.querySelector(`body`);
+			const overlay = document.querySelector(`.overlay`);
+
+			if (hamburger.classList.contains(`active`)) {
+				body.classList.add(`overflow-hidden`);
+				overlay.classList.add(`opacity-50`);
+			} else {
+				body.classList.remove(`overflow-hidden`);
+				overlay.classList.remove(`opacity-50`);
+			}
+		};
+
+		handleOverlay();
 		document.addEventListener(`click`, handleOverlay, false);
 		document.addEventListener(`keydown`, handleOverlay, false);
 
 		return () => {
+			handleOverlay();
 			document.removeEventListener(`click`, handleOverlay, false);
 			document.removeEventListener(`keydown`, handleOverlay, false);
 		};
-	}, [handleOverlay]);
+	}, []);
 
 	return (
 		<header>

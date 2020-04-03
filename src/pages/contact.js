@@ -8,14 +8,7 @@ const ContactPage = () => {
 	return (
 		<Layout>
 			<SEO
-				keywords={[
-					`contact`,
-					`web dev`,
-					`perth`,
-					`tailwind`,
-					`freelance`,
-					`portfolio`,
-				]}
+				keywords={[`contact`, `web dev`, `perth`, `freelance`, `portfolio`]}
 				title="Contact"
 			/>
 			<section className="px-4 md:px-0">
