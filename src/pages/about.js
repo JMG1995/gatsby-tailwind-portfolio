@@ -11,8 +11,8 @@ const AboutPage = () => {
 				keywords={[`about`, `web dev`, `perth`, `freelance`]}
 				title="About"
 			/>
-			<section className="px-4 md:px-0 flex justify-around items-center">
-				<div className="w-1/2 pr-4">
+			<section className="px-4 lg:px-0 flex flex-col lg:flex-row justify-around items-center">
+				<div className="lg:w-1/2 lg:pr-4">
 					<h2>
 						A little about <span className="text-desire">me...</span>
 					</h2>
@@ -44,7 +44,7 @@ const AboutPage = () => {
 						features.
 					</p>
 				</div>
-				<div className="w-1/3">
+				<div className="w-2/3 mt-8 lg:mt-0 lg:w-1/3">
 					<img
 						alt="This is me!"
 						class="rounded-full shadow-md"

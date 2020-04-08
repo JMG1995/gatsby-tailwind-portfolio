@@ -22,7 +22,7 @@ const IndexPage = ({
 				title="Home"
 			/>
 
-			<div className="px-8 md:px-16 lg:px-20">
+			<div className="px-4 md:px-16 lg:px-20">
 				<section className="mb-24 flex flex-col lg:flex-row items-center justify-between">
 					<div className="lg:w-1/2">
 						<h2>
@@ -44,7 +44,7 @@ const IndexPage = ({
 							</Link>
 						</p>
 					</div>
-					<div className="relative w-1/2 mt-8 lg:mt-0 lg:w-1/3 group">
+					<div className="relative w-2/3 mt-8 lg:mt-0 lg:w-1/3 group">
 						<span className="tooltip transition opacity-0 group-hover:opacity-100">
 							Hard at work!
 						</span>
