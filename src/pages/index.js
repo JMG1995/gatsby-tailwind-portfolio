@@ -13,7 +13,7 @@ const IndexPage = ({
 }) => {
 	const Blogs = edges
 		// .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-		.map(edge => <Blog blog={edge.node} key={edge.node.id} />);
+		.map((edge) => <Blog blog={edge.node} key={edge.node.id} />);
 
 	return (
 		<Layout>

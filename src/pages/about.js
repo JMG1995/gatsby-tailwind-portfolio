@@ -13,7 +13,9 @@ const AboutPage = () => {
 			/>
 			<section className="px-4 md:px-0 flex justify-around items-center">
 				<div className="w-1/2 pr-4">
-					<h2 className="text-desire">A little about me...</h2>
+					<h2>
+						A little about <span className="text-desire">me...</span>
+					</h2>
 					<p>
 						My development journey began at the end of 2017 when, after
 						completing a degree in Audio Engineering, I realised the field
@@ -30,11 +32,11 @@ const AboutPage = () => {
 						continued to build bigger websites and manage more clients.
 					</p>
 					<p>
-						In late 2019, I was offered the position at{' '}
+						In late 2019, I was offered the position at{` `}
 						<a
 							href="https://hatchet.com.au"
-							target="_blank"
-							rel="noopener noreferrer">
+							rel="noopener noreferrer"
+							target="_blank">
 							Hatchet
 						</a>
 						, where I am a Frontend Developer. I'm currently focused on building
@@ -44,9 +46,9 @@ const AboutPage = () => {
 				</div>
 				<div className="w-1/3">
 					<img
+						alt="This is me!"
 						class="rounded-full shadow-md"
 						src={josephImg}
-						alt="This is me!"
 					/>
 				</div>
 			</section>

@@ -12,6 +12,10 @@ const menuItems = [
 		title: `Home`,
 	},
 	{
+		route: `/about`,
+		title: `About`,
+	},
+	{
 		route: `/contact`,
 		title: `Contact`,
 	},
