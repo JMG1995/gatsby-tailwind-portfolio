@@ -44,10 +44,10 @@ const AboutPage = () => {
 						features.
 					</p>
 				</div>
-				<div className="w-2/3 mt-8 lg:mt-0 lg:w-1/3">
+				<div className="order-first w-2/3 mb-8 lg:mb-0 lg:w-1/3">
 					<img
 						alt="This is me!"
-						class="rounded-full shadow-md"
+						className="rounded-full shadow-md"
 						src={josephImg}
 					/>
 				</div>
