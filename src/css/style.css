@@ -57,6 +57,14 @@ h6,
 	@apply text-base;
 }
 
+p {
+	@apply mb-3;
+}
+
+p a {
+	@apply text-desire;
+}
+
 .transform-slide-right {
 	transform: translateX(100%);
 }
