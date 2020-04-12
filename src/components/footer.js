@@ -16,11 +16,18 @@ function Footer() {
 						Twitter
 					</a>
 					<a
-						className="hover:text-desire"
+						className="mr-6 hover:text-desire"
 						href="https://github.com/JMG1995/"
 						rel="noopener noreferrer"
 						target="_blank">
 						GitHub
+					</a>
+					<a
+						className="hover:text-desire"
+						href="/sitemap.xml"
+						rel="noopener noreferrer"
+						target="_blank">
+						Sitemap
 					</a>
 				</div>
 			</nav>
