@@ -3,8 +3,10 @@ module.exports = {
 		title: `Joseph Grant - Developer`,
 		description: `Simple portfolio built with Gatsby and Tailwind`,
 		author: `@josephgrant`,
+		siteUrl: `https://jgrant.co`,
 	},
 	plugins: [
+		`gatsby-plugin-sitemap`,
 		`gatsby-plugin-react-helmet`,
 		{
 			resolve: `gatsby-plugin-google-analytics`,
