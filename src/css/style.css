@@ -43,7 +43,8 @@ h3,
 }
 
 h4,
-.h4 {
+.h4,
+.blog-post-content h4 {
 	@apply text-2xl !important;
 }
 
