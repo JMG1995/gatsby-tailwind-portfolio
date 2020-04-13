@@ -44,7 +44,7 @@ h3,
 
 h4,
 .h4 {
-	@apply text-2xl;
+	@apply text-2xl !important;
 }
 
 h5,
@@ -154,7 +154,7 @@ p a {
 
 /* Gatsby code syntax */
 .gatsby-highlight > pre[class*='language-'] {
-	@apply mb-6;
+	@apply mb-6 !important;
 }
 
 code[class*='language-'] {

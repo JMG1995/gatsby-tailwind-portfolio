@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '../components/layout';
-import SEO from '../components/seo';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
@@ -17,10 +16,10 @@ export default function Template({
 	const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 	return (
 		<Layout>
-			<div className="blog-post-container w-2/3 mx-auto">
+			<div className="blog-post-container w-full md:w-2/3 mx-auto">
 				<div className="blog-post">
 					<Img className="mb-4" fluid={featuredImgFluid} />
-					{categories.map(category => (
+					{categories.map((category) => (
 						<span className="rounded-full text-sm bg-space-cadet px-3 text-honeydew my-3 inline-block mr-2">
 							{category}
 						</span>

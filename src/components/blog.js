@@ -1,5 +1,4 @@
 import React from 'react';
-// import featuredImage from '../images/blog-image.jpg';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
@@ -16,7 +15,7 @@ const Blog = ({ blog }) => {
 			<Link to={blog.frontmatter.path}>
 				<Img className="rounded-t-lg object-cover" fluid={featuredImgFluid} />
 				<div className="px-4 pb-4 rounded-lg shadow-md">
-					{categories.map(category => (
+					{categories.map((category) => (
 						<span className="rounded-full text-sm bg-space-cadet px-3 text-honeydew my-3 inline-block mr-2">
 							{category}
 						</span>
