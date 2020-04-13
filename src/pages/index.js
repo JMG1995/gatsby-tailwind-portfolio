@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Blog from '../components/blog';
-// import Button from '../components/button';
+import Button from '../components/button';
 import code from '../images/code.svg';
 
 const IndexPage = ({
@@ -52,13 +52,13 @@ const IndexPage = ({
 					</div>
 				</section>
 
-				{/* {Blogs.length > 0 ? (
+				{Blogs.length > 0 ? (
 					<section className="my-24">
 						<h2 className="mb-8">Blog</h2>
 						<div className="-mx-4 flex flex-wrap">{Blogs}</div>
 						{Blogs.length >= 2 ?? <Button text="Load More" />}
 					</section>
-				) : null} */}
+				) : null}
 			</div>
 		</Layout>
 	);
