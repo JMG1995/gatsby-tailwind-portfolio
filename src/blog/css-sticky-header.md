@@ -6,14 +6,14 @@ categories: ['CSS', 'Quick Tip']
 featuredImage: './images/feature-css-sticky-header.jpg'
 ---
 
-A common feature request when creating a website is the inclusion of a sticky header. Today, we'll setup a basic navigational header and demonstrate the sticky effect.
+A common feature request when creating a website is the inclusion of a sticky header. Today, we'll setup a basic navigational header and demonstrate this effect.
 
 <!-- end -->
 
 <p><a href="#sticky-css">Click here</a> to skip everything else and see the code that makes this work, or <a href="https://codepen.io/joeygrillz/pen/xxwGxKo?editors=0100" target="_blank" rel="noopener noreferrer">view the Codepen</a> with the finished product.</p>
 
 <h4>Setting Up The Header</h4>
-<p>The first thing we need to do is write the HTML for the header. In the interest of keeping it simple and getting up and running quickly, we'll keep it basic.</p>
+<p>The first thing we need to do is write the HTML for the header. In the interest of simplicity and getting up and running quickly, we'll keep it basic.</p>
 
 ```html
 <header>
@@ -27,7 +27,7 @@ A common feature request when creating a website is the inclusion of a sticky he
 </header>
 ```
 
-<p>Now our HTML structure is set, but it doesn't look anything like a header yet. Let's add a quick bit of CSS to sort fix that.</p>
+<p>Now our HTML structure is set, but it doesn't look anything like a header yet. Let' add a quick bit of CSS to fix that.</p>
 
 ```css
 header {
@@ -59,7 +59,7 @@ a {
 }
 ```
 
-<p>Much better. Before we make our header sticky, let's add a little bit of content so that we will be able to clearly see our sticky header working. Under the header in your HMTL file, add the following code:</p>
+<p>Much better. Before we make our header sticky, we'll also add some content so that we will be able to clearly see our sticky header working. Under the header element in your HMTL file, add the following code:</p>
 
 ```html
 <main>
@@ -78,8 +78,7 @@ a {
 </main>
 ```
 
-<p>This should give you some content underneath the header. This will help us clearly see the sticky effect.</p>
-<p>We will also add a little bit of CSS to keep it tidy and ensure the page will definitely scroll:</p>
+<p>We will also throw in some more CSS to keep it tidy and ensure the page will definitely have enough height to scroll:</p>
 
 ```css
 /* This is just so we can get a scrollbar to show the sticky effect  */
@@ -93,7 +92,7 @@ main {
 ```
 
 <h4 id="sticky-css">Making It Sticky</h4>
-<p>Everything is ready to go and is just awaiting our navigation being made sticky. You'll be glad to know this part is actually very straightforward and is only the following 2 lines of CSS, which should be added to your header element.</p>
+<p>Everything is ready to go and is just awaiting our navigation being made sticky. You'll be glad to know this part is actually very straightforward and is only 2 lines of CSS, which should be added to your header element.</p>
 
 ```css
 header {
@@ -103,10 +102,10 @@ header {
 ```
 
 <p>If you scroll you should now see your header should remain fixed to the top of the page, no matter how far down you scroll.</p>
-<p><strong>Note: </strong>Depending on your site, you may need to up the z-index of the header to ensure it has the highest priority and will sit above all other content. For more information on that, check out this <a href="https://css-tricks.com/almanac/properties/z/z-index/" target="_blank" rel="noopener noreferrer">explanation by Sara Cope</a> or the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank" rel="noopener noreferrer">official MDN docs.</a></p>
+<p><strong>Note: </strong>Depending on your site, you may need to up the z-index of the header to ensure it has the highest priority and will sit above all other content. For more information, check out this <a href="https://css-tricks.com/almanac/properties/z/z-index/" target="_blank" rel="noopener noreferrer">explanation by Sara Cope</a> or the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index" target="_blank" rel="noopener noreferrer">official MDN docs.</a></p>
 
 <h4>Sticky vs Fixed</h4>
-<p>The difference between sticky and fixed is a subtle but important when building a feature like this. To put it simply, you can think of sticky being relative and fixed being absolute. An element that is given a fixed position will be taken out of the original document flow and always remain in the specified position. However an element with a position of sticky can be seen as relative, and so will remain in the original document flow.</p>
+<p>The difference between sticky and fixed is a subtle but important difference when building a feature like this. To put it simply, because a fixed element will be taken out of the normal document flow, anything that would normally sit below it will now sit underneath it, effectively removing it from view. By making the element sticky, it ensures that any content that follows it will be seen as expected.</p>
 
 <p>This can be seen in our example, where the content we added sits nicely below the header when the user is at the top of the page. If you were to swap this to fixed, the content would rise up to the top of document and sit underneath the header, meaning the first part is cut off from view.</p>
 
