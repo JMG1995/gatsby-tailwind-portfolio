@@ -1,5 +1,6 @@
 import React from 'react';
 import Layout from '../components/layout';
+import SEO from '../components/seo';
 import Img from 'gatsby-image';
 import { graphql } from 'gatsby';
 
@@ -16,6 +17,8 @@ export default function Template({
 	const featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid;
 	return (
 		<Layout>
+			<SEO title={frontmatter.title} />
+
 			<div className="blog-post-container w-full md:w-2/3 mx-auto">
 				<div className="blog-post">
 					<Img className="mb-4" fluid={featuredImgFluid} />

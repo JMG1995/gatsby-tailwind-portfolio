@@ -1,7 +1,6 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
 
 /* Custom base styles */
 body {
@@ -161,5 +160,6 @@ p a {
 code[class*='language-'] {
 	tab-size: 2 !important;
 }
+/* purgecss end ignore */
 
 @tailwind utilities;
