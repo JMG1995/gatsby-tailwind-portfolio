@@ -25,7 +25,7 @@ h6,
 
 h1,
 .h1 {
-	@apply text-5xl;
+	@apply text-5xl leading-tight;
 }
 
 h2,
@@ -39,7 +39,7 @@ h2,
 
 h3,
 .h3 {
-	@apply text-3xl;
+	@apply text-3xl leading-tight;
 }
 
 h4,
@@ -57,7 +57,9 @@ h6,
 	@apply text-base;
 }
 
-p {
+p,
+ol,
+ul {
 	@apply mb-3;
 }
 
@@ -148,6 +150,15 @@ p a {
 }
 .ham6.active .bottom {
 	stroke-dashoffset: -132px;
+}
+
+/* Gatsby code syntax */
+.gatsby-highlight > pre[class*='language-'] {
+	@apply mb-6;
+}
+
+code[class*='language-'] {
+	tab-size: 2 !important;
 }
 
 @tailwind utilities;
