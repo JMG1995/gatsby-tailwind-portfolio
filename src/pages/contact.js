@@ -15,13 +15,13 @@ const ContactPage = () => {
 				<h2 className="md:w-1/2 text-center mx-auto">
 					I want to hear from <em className="text-desire">you</em>.
 				</h2>
-				<p className="md:w-1/3 text-center mx-auto mb-4">
+				<p className="md:w-2/3 lg:w-1/3 text-center mx-auto mb-4">
 					Don't hesitate to drop me a line if you have any questions, would like
 					to work together or even just have a chat.
 				</p>
 				<form
 					action="/thankyou"
-					className="mx-auto md:w-1/2 shadow-2xl p-12 rounded-lg"
+					className="mx-auto md:w-1/2 shadow-2xl p-6 lg:p-12 rounded-lg"
 					data-netlify="true"
 					method="POST"
 					name="contact">

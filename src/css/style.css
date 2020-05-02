@@ -156,9 +156,10 @@ p a {
 	@apply mb-6 !important;
 }
 
-code[class*='language-'] {
+.gatsby-highlight code[class*='language-'] {
 	tab-size: 2 !important;
 }
+
 /* purgecss end ignore */
 
 @tailwind utilities;
