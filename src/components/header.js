@@ -4,7 +4,7 @@ import menuItems from './menu-items';
 import Hamburger from '../components/hamburger';
 
 const Header = ({ open, setOpen }) => {
-	const escFunction = useCallback(event => {
+	const escFunction = useCallback((event) => {
 		const hamburger = document.querySelector(`.ham`);
 
 		if (event.keyCode === 27) {
@@ -51,7 +51,7 @@ const Header = ({ open, setOpen }) => {
 
 	return (
 		<header>
-			<div className="flex flex-wrap items-center justify-between container mx-auto py-8">
+			<div className="flex flex-wrap items-center justify-between container mx-auto md:py-8">
 				<Link className="flex items-center no-underline text-white" to="/">
 					<span className="font-bold text-xl tracking-tight text-knight-black">
 						Joseph Grant
@@ -66,7 +66,7 @@ const Header = ({ open, setOpen }) => {
 				</span>
 
 				<nav className="hidden md:flex items-center">
-					{menuItems.map(link => (
+					{menuItems.map((link) => (
 						<Link
 							className="block md:inline-block mt-4 md:mt-0 md:ml-6 no-underline text-knight-black hover:text-desire transition"
 							key={link.title}
