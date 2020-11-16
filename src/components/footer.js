@@ -6,6 +6,15 @@ function Footer() {
 			<nav className="flex flex-col justify-center md:flex-row md:justify-between container mx-auto py-4 md:py-8 items-center text-base">
 				<small className="order-2 mt-4 md:mt-0 text-base">
 					{new Date().getFullYear()} <sup>&copy;</sup>
+					<span>
+						{` `}Built by{` `}
+						<a
+							href="https://halfcab.com.au"
+							rel="noopener noreferrer"
+							target="_blank">
+							Halfcab
+						</a>
+					</span>
 				</small>
 				<div className="flex justify-between md:order-2">
 					<a
