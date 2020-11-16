@@ -1,9 +1,11 @@
 ---
-path: '/blog/css-sticky-header'
-date: '2020-04-13'
-title: 'Quick Tip: Creating a sticky header.'
-categories: ['CSS', 'Quick Tip']
-featuredImage: './images/feature-css-sticky-header.jpg'
+path: /blog/css-sticky-header
+date: 2020-05-02T08:18:36.638Z
+title: "Quick Tip: Creating a sticky header."
+categories:
+  - CSS
+  - Quick Tip
+featuredImage: ./images/feature-css-sticky-header.jpg
 ---
 
 A common feature request when creating a website is the inclusion of a sticky header. Today, we'll setup a basic navigational header and demonstrate this effect.
